@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import MusicSidebar from './components/MusicSidebar';
-import AlbumGrid from './components/AlbumGrid';
-import TopTracksList from './components/TopTracksList';
-import PlaybackControls from './components/PlaybackControls';
-import { MOCK_ALBUMS, MOCK_TRACKS, MOCK_PLAYLISTS } from './constants';
-import { Track } from './types';
+import MusicSidebar from './components/MusicSidebar.js';
+import AlbumGrid from './components/AlbumGrid.js';
+import TopTracksList from './components/TopTracksList.js';
+import PlaybackControls from './components/PlaybackControls.js';
+import { MOCK_ALBUMS, MOCK_TRACKS, MOCK_PLAYLISTS } from './constants.js';
 import { ChevronLeft, ChevronRight, User, Bell } from 'lucide-react';
 
-const App: React.FC = () => {
+const App = () => {
   // Mock State
-  const [currentTrack, setCurrentTrack] = useState<Track | null>(MOCK_TRACKS[0]);
+  const [currentTrack, setCurrentTrack] = useState(MOCK_TRACKS[0]);
   const [backgroundOpacity, setBackgroundOpacity] = useState(0);
 
   // Scroll handler for top bar transparency effect
-  const handleScroll = (e: React.UIEvent<HTMLElement>) => {
+  const handleScroll = (e) => {
     const scrollTop = e.currentTarget.scrollTop;
     const opacity = Math.min(scrollTop / 150, 1);
     setBackgroundOpacity(opacity);
