@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import { Play, Pause, SkipBack, SkipForward, Repeat, Shuffle, Volume2, Maximize2, Mic2, Layers } from 'lucide-react';
-import { Track } from '../types';
 
-interface PlaybackControlsProps {
-  currentTrack: Track | null;
-}
-
-const PlaybackControls: React.FC<PlaybackControlsProps> = ({ currentTrack }) => {
+const PlaybackControls = ({ currentTrack }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(30);
   const [volume, setVolume] = useState(70);
