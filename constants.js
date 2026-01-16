@@ -1,6 +1,4 @@
-import { Album, Track, Playlist } from './types';
-
-export const MOCK_ALBUMS: Album[] = [
+export const MOCK_ALBUMS = [
   {
     id: '1',
     title: 'Midnight Horizons',
@@ -45,7 +43,7 @@ export const MOCK_ALBUMS: Album[] = [
   },
 ];
 
-export const MOCK_TRACKS: Track[] = [
+export const MOCK_TRACKS = [
   {
     id: 't1',
     title: 'Starry Night Blues',
@@ -93,7 +91,7 @@ export const MOCK_TRACKS: Track[] = [
   },
 ];
 
-export const MOCK_PLAYLISTS: Playlist[] = [
+export const MOCK_PLAYLISTS = [
   { id: 'p1', name: 'Driving Beats' },
   { id: 'p2', name: 'Focus Mode' },
   { id: 'p3', name: 'Late Night Chill' },
