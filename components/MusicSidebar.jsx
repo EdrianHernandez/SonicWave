@@ -1,12 +1,7 @@
 import React from 'react';
 import { Home, Library, PlusSquare, Heart, Globe, Disc, Mic2 } from 'lucide-react';
-import { Playlist } from '../types';
 
-interface MusicSidebarProps {
-  playlists: Playlist[];
-}
-
-const MusicSidebar: React.FC<MusicSidebarProps> = ({ playlists }) => {
+const MusicSidebar = ({ playlists }) => {
   return (
     <aside className="w-64 bg-black h-full flex flex-col gap-y-2 p-2 hidden md:flex flex-shrink-0">
       <div className="bg-neutral-900 rounded-lg p-4 flex flex-col gap-4">
