@@ -1,12 +1,7 @@
 import React from 'react';
-import { Track } from '../types';
 import { Clock, Heart, Play } from 'lucide-react';
 
-interface TopTracksListProps {
-  tracks: Track[];
-}
-
-const TopTracksList: React.FC<TopTracksListProps> = ({ tracks }) => {
+const TopTracksList = ({ tracks }) => {
   return (
     <section className="mb-8">
       <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">Popular</h2>
