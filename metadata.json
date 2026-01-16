@@ -1,0 +1,5 @@
+{
+  "name": "SonicWave",
+  "description": "A sleek, dark-mode music streaming dashboard featuring a responsive library, album grid, and persistent playback controls.",
+  "requestFramePermissions": []
+}
