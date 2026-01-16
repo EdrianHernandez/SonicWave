@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import MusicSidebar from './components/MusicSidebar.js';
-import AlbumGrid from './components/AlbumGrid.js';
-import TopTracksList from './components/TopTracksList.js';
-import PlaybackControls from './components/PlaybackControls.js';
+import MusicSidebar from './components/MusicSidebar.jsx';
+import AlbumGrid from './components/AlbumGrid.jsx';
+import TopTracksList from './components/TopTracksList.jsx';
+import PlaybackControls from './components/PlaybackControls.jsx';
 import { MOCK_ALBUMS, MOCK_TRACKS, MOCK_PLAYLISTS } from './constants.js';
 import { ChevronLeft, ChevronRight, User, Bell } from 'lucide-react';
 
