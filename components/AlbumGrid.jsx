@@ -1,13 +1,7 @@
 import React from 'react';
-import { Album } from '../types';
 import { Play } from 'lucide-react';
 
-interface AlbumGridProps {
-  albums: Album[];
-  title: string;
-}
-
-const AlbumGrid: React.FC<AlbumGridProps> = ({ albums, title }) => {
+const AlbumGrid = ({ albums, title }) => {
   return (
     <section className="mb-8">
       <div className="flex items-center justify-between mb-4">
